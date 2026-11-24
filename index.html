@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <title>Weather App</title>
-    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
     <!-- html is parsed before js executes -->
     <script src="script.js" defer></script>
   </head>
   <body>
     <form>
-      <label for="cities">Choose a city below:</label><br />
+      <label for="cities">Add city:</label><br />
 
-      <select name="city" id="cities"></select>
+      <input
+        type="text"
+        id="cities"
+        name="city"
+        autocomplete="off"
+        placeholder="Start typing out city name"
+      />
 
       <br />
       <br />
-      <input id="submit-city" type="button" value="Submit" />
+      <input id="submit-city" type="button" value="Add" />
     </form>
 
-    <div id="weather"></div>
+    <div id="forecast"></div>
   </body>
 </html>
